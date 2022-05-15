@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@300;400&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <script>
+        // Ignore this in your implementation
+        window.isMbscDemo = true;
+    </script>
+
+    <!-- Mobiscroll JS and CSS Includes -->
+    <link rel="stylesheet" href="css/mobiscroll.javascript.min.css">
+    <script src="js/mobiscroll.javascript.min.js"></script>
+    <title>Video Call</title>
+</head>
+
+<body>
+    <div class="header" id="header">
+        <div class="container">
+            <a class="logo" href="#">Re3aya</a>
+            <ul class="main-nav">
+                <li class="active3"><a href="#doctor">Video Call</a></li>
+                <li class="active"><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="landing" id="doctor">
+        <div class="container">
+            <div class="text">
+                <h3>Book a Telehealth Consultation Call</h3>
+                <p>Video Call consultation with doctor</p>
+            </div>
+            <div class="input">
+                <form>
+                    <!-- <span>Speciality</span> -->
+                    <input list="speciality" placeholder="Choose Speciality">
+                    <datalist id="speciality">
+                        <option value="Diagnostic radiology">
+                        <option value="Dermatology">
+                        <option value="Anesthesiology">
+                        <option value="Allergy and immunology">
+                        <option value="Neurology">
+                        <option value="Obstetrics and gynecology">
+                        <option value="Ophthalmology">
+                        <option value="Pediatrics">
+                        <option value="Psychiatry">
+                        <option value="Surgery">
+                        <option value="Urology">
+                        <option value="Cardiologists">
+                        <option value="Colon and Rectal Surgeons">
+                        <option value="Critical Care Medicine Specialists">
+                        <option value="Endocrinologists">
+                        <option value="Hematologists">
+                        <option value="Internists"></option>
+                        <option value="Oncologists"></option>
+                        <option value="Osteopaths"></option>
+                        <option value="Pulmonologists"></option>
+                    </datalist>
+
+
+                    <label for="docname"></label>
+                    <input type="text" placeholder="Doctor Name" id="docname">
+
+                    <button class="btn">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="alldoctors" id="alldoctors">
+        <div class="container">
+            <div class="box">
+                <div class="col">
+                    <img src="images/avatar-01.png" alt="" />
+                    <div class="nam">
+                        <h3>Mohamed Farag</h3>
+                        <i class='fas fa-video'></i>
+                    </div>
+                    <span class="title">Consultant of General surgery-Mansoura university.</span>
+                    <div class="rate">
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="fa fa-stethoscope"></i>
+                            <p class="active1"><span>General Surgeon Specialized in Colon Tumor, Adult General
+                                    Surger</span></p>
+                        </li>
+                        <li>
+                            <i class='fas fa-map-marker-alt'></i>
+                            <p><span>El-Dokki : micheel bakhoum</span></p>
+                        </li>
+                        <li>
+                            <i class="fa fa-dollar"></i>
+                            <p>Fees : <span>300 EGP</span></p>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <p><span>16676</span> - Cost of regular call</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="appointment">
+                    <h2>Choose your appointment</h2>
+                    <div class="time">
+                        <div mbsc-page class="demo-date-time-picker">
+                            <div style="height:100%">
+                                <div id="demo"></div>
+                                <div id="demo-timegrid"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn">Book Online</button>
+            </div>
+            <div class="box">
+                <div class="col">
+                    <img src="images/avatar-02.png" alt="" />
+                    <div class="nam">
+                        <h3>Mohamed Ibrahim</h3>
+                        <i class='fas fa-video'></i>
+                    </div>
+                    <span class="title">Consultant of General surgery-Mansoura university.</span>
+                    <div class="rate">
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="fa fa-stethoscope"></i>
+                            <p><span>General Surgeon Specialized in Colon Tumor, Adult General Surger</span>
+                            </p>
+                        </li>
+                        <li>
+                            <i class='fas fa-map-marker-alt'></i>
+                            <p><span>El-Dokki : micheel bakhoum</span></p>
+                        </li>
+                        <li>
+                            <i class="fa fa-dollar"></i>
+                            <p>Fees : <span>300 EGP</span></p>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <p><span>16676</span> - Cost of regular call</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="appointment">
+                    <h2>Choose your appointment</h2>
+                    <div class="time">
+                        <div mbsc-page class="demo-date-time-picker">
+                            <div style="height:100%">
+                                <div id="demo"></div>
+                                <div id="demo-timegrid"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn">Book Online</button>
+            </div>
+            <div class="box">
+                <div class="col">
+                    <img src="images/avatar-03.png" alt="" />
+                    <div class="nam">
+                        <h3>Shady Nabil</h3>
+                        <i class='fas fa-video'></i>
+                    </div>
+                    <span class="title">Consultant of General surgery-Mansoura university.</span>
+                    <div class="rate">
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="fa fa-stethoscope"></i>
+                            <p><span>General Surgeon Specialized in Colon Tumor, Adult General Surger</span></p>
+                        </li>
+                        <li>
+                            <i class='fas fa-map-marker-alt'></i>
+                            <p><span>El-Dokki : micheel bakhoum</span></p>
+                        </li>
+                        <li>
+                            <i class="fa fa-dollar"></i>
+                            <p>Fees : <span>300 EGP</span></p>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <p><span>16676</span> - Cost of regular call</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="appointment">
+                    <h2>Choose your appointment</h2>
+                    <div class="time">
+                        <div mbsc-page class="demo-date-time-picker">
+                            <div style="height:100%">
+                                <div id="demo"></div>
+                                <div id="demo-timegrid"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="btn">Book Online</button>
+            </div>
+            <div class="box">
+                <div class="col">
+                    <img src="images/avatar-04.png" alt="" />
+                    <div class="nam">
+                        <h3>Amr Hendawy</h3>
+                        <i class='fas fa-video'></i>
+                    </div>
+                    <span class="title">Consultant of General surgery-Mansoura university.</span>
+                    <div class="rate">
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="fa fa-stethoscope"></i>
+                            <p><span>General Surgeon Specialized in Colon Tumor, Adult General Surger</span></p>
+                        </li>
+                        <li>
+                            <i class='fas fa-map-marker-alt'></i>
+                            <p><span>El-Dokki : micheel bakhoum</span></p>
+                        </li>
+                        <li>
+                            <i class="fa fa-dollar"></i>
+                            <p>Fees : <span>300 EGP</span></p>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <p><span>16676</span> - Cost of regular call</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="appointment">
+                    <h2>Choose your appointment</h2>
+                    <div class="time">
+                        <div mbsc-page class="demo-date-time-picker">
+                            <div style="height:100%">
+                                <div id="demo"></div>
+                                <div id="demo-timegrid"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn">Book Online</button>
+            </div>
+            <div class="box">
+                <div class="col">
+                    <img src="images/avatar-05.png" alt="" />
+                    <div class="nam">
+                        <h3>Sherief Ashraf</h3>
+                        <i class='fas fa-video'></i>
+                    </div>
+                    <span class="title">Consultant of General surgery-Mansoura university.</span>
+                    <div class="rate">
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="fa fa-stethoscope"></i>
+                            <p><span>General Surgeon Specialized in Colon Tumor, Adult General Surger</span></p>
+                        </li>
+                        <li>
+                            <i class='fas fa-map-marker-alt'></i>
+                            <p><span>El-Dokki : micheel bakhoum</span></p>
+                        </li>
+                        <li>
+                            <i class="fa fa-dollar"></i>
+                            <p>Fees : <span>300 EGP</span></p>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <p><span>16676</span> - Cost of regular call</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="appointment">
+                    <h2>Choose your appointment</h2>
+                    <div class="time">
+                        <div mbsc-page class="demo-date-time-picker">
+                            <div style="height:100%">
+                                <div id="demo"></div>
+                                <div id="demo-timegrid"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn">Book Online</button>
+            </div>
+            <div class="box">
+                <div class="col">
+                    <img src="images/avatar-06.png" alt="" />
+                    <div class="nam">
+                        <h3>Osama Mohamed</h3>
+                        <i class='fas fa-video'></i>
+                    </div>
+                    <span class="title">Consultant of General surgery-Mansoura university.</span>
+                    <div class="rate">
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="fa fa-stethoscope"></i>
+                            <p><span>General Surgeon Specialized in Colon Tumor, Adult General Surger</span></p>
+                        </li>
+                        <li>
+                            <i class='fas fa-map-marker-alt'></i>
+                            <p><span>El-Dokki : micheel bakhoum</span></p>
+                        </li>
+                        <li>
+                            <i class="fa fa-dollar"></i>
+                            <p>Fees : <span>300 EGP</span></p>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <p><span>16676</span> - Cost of regular call</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="appointment">
+                    <h2>Choose your appointment</h2>
+                    <div class="time">
+                        <div mbsc-page class="demo-date-time-picker">
+                            <div style="height:100%">
+                                <div id="demo"></div>
+                                <div id="demo-timegrid"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn">Book Online</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="box">
+                <h3>Re3aya</h3>
+                <ul class="social">
+                    <li>
+                        <a href="#" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="text">Healthcare for you</p>
+            </div>
+            <div class="box">
+                <ul class="links">
+                    <li><a href="#doctor">Video Call</a></li>
+                    <!-- <li><a href="#contact">Contact Us</a></li> -->
+                </ul>
+            </div>
+            <div class="box">
+                <div class="line">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <div class="info">Egypt, Cairo, Giza</div>
+                </div>
+                <div class="line">
+                    <i class="far fa-clock fa-fw"></i>
+                    <div class="info">Business Hours: 24 hours</div>
+                </div>
+                <div class="line">
+                    <i class="fas fa-phone-volume fa-fw"></i>
+                    <div class="info">
+                        <span>01157082417</span>
+                        <span>01157082417</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="js/index.js"></script>
+</body>
+
+</html>
